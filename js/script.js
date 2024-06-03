@@ -122,7 +122,7 @@ console.log(categories);
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      cosole.log(homeHtmlToInsertIntoMainPage);
+      console.log(homeHtmlToInsertIntoMainPage);
       insertHtml("#main-content",homeHtmlToInsertIntoMainPage);
 
     },
