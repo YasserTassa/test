@@ -91,7 +91,8 @@ $ajaxUtils.sendGetRequest(
 
 // Builds HTML for the home page based on categories array
 // returned from the server.
-function buildAndShowHomeHTML (categories){ 
+function buildAndShowHomeHTML (categories) {
+console.log(categories);
   // Load home snippet page
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
@@ -113,7 +114,7 @@ function buildAndShowHomeHTML (categories){
       // $dc.loadMenuItems('L')
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
-      console.log(homeHtmlToInsertIntoMainPage);
+      //
       // var homeHtmlToInsertIntoMainPage = ....
 
 
@@ -121,6 +122,7 @@ function buildAndShowHomeHTML (categories){
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
+      cosole.log(homeHtmlToInsertIntoMainPage);
       insertHtml("#main-content",homeHtmlToInsertIntoMainPage);
 
     },
